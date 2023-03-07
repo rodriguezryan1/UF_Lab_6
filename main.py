@@ -27,9 +27,9 @@ def main():
         if selection == 1:
             orig_pass = input("Please enter your password to encode: ")
             encoded_pass = encoder(orig_pass)
-            print("Your password has been encoded and stored!")
+            print("Your password has been encoded and stored!\n")
         if selection == 2:
-            print(f"The encoded password is {encoded_pass}, and the original password is {orig_pass}")
+            print(f"The encoded password is {encoded_pass}, and the original password is {orig_pass}.\n")
         if selection == 3:
             break
 
