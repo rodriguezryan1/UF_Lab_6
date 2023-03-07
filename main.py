@@ -3,7 +3,11 @@
 def encoder(password):
     encoded = ""
     for char in password:
-        encoded += str(int(char) + 3)
+        new = str(int(char) + 3)
+        if len(new) > 1:
+            encoded += new[1:]
+        else:
+            encoded += new
     return encoded
 
 
